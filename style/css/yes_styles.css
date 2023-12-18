@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8C8DC;
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.container {
+    text-align: center;
+}
+
+.header_text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(243, 179, 226);
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.gif_container {
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #FF6B6B;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.text:hover {
+    background-color: #FF8C8C;
+}
+
+/* Ajoute une ombre subtile aux boutons */
+.text,
+.text:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

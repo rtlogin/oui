@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Do you love me?</title>
+    <link rel="shortcut icon" href="/icon.ico" type="ico">
+    <link rel="stylesheet" href="./style/css/yes_styles.css">
+    <!-- Ajoutez ces liens pour jQuery et particles.js -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+        .header_text {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ajoutez cette section pour les particules -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div>
+            <h1 class="header_text" id="coucou1">❤️</h1>
+            <h1 class="header_text" id="coucou2">❤️</h1>
+            <h1 class="header_text" id="coucou3">❤️</h1>
+            <h1 class="header_text" id="coucou4">❤️</h1>
+            <h1 class="header_text" id="coucou5">❤️</h1>
+            <h1 class="header_text" id="coucou6">❤️</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://media.discordapp.net/attachments/965573395532120114/1185631464948240404/pngegg_17.png?ex=65905059&is=657ddb59&hm=b44fdca7e9a5f71ba397192163f3b32e1797e204eb6f249a1c5aa2eeea76101e&=&format=webp&quality=lossless&width=675&height=675" alt="Cute animated illustration">
+        </div>
+        <p class="text button" onclick="ouvrirOpenClassrooms()"> Skoubididou d'amour🧕</p>
+
+        <script>
+            // Ajoutez le script particles.js
+    
+
+            function deplacerCoucou(coucouId) {
+                var coucou = document.getElementById(coucouId);
+                var posX = Math.random() * window.innerWidth;
+                var posY = Math.random() * window.innerHeight;
+
+                coucou.style.left = posX + 'px';
+                coucou.style.top = posY + 'px';
+            }
+
+            function deplacerTousLesCoeurs() {
+                deplacerCoucou('coucou1');
+                deplacerCoucou('coucou2');
+                deplacerCoucou('coucou3');
+                deplacerCoucou('coucou4');
+                deplacerCoucou('coucou5');
+                deplacerCoucou('coucou6');
+            }
+
+            function ouvrirOpenClassrooms() {
+                window.open('https://www.france.fr/fr/nouvelle-caledonie/article/le-coeur-le-plus-celebre-du-monde-est-en-nouvelle-caledonie', '_blank');
+            }
+
+            setInterval(deplacerTousLesCoeurs, 700);
+        </script>
+    </div>
+</body>
+</html>
